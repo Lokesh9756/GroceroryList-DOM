@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1 id="headerItem">items</h1>
+    <form id="formId" style="margin: auto;">
+        <input id="itemName" type="text" size="10" placeholder="Enter item name">
+        <input id="itemUnit" type="text" size="10" placeholder="Enter item unit">
+        <input id="itemPrice" type="text" size="10" placeholder="Enter per unit price of item">
+        <input type="submit" value="add items">
+
+    </form>
+
+    <div style="margin:20px">
+        <table id="table1" style=" border-collapse: collapse;">
+            <tr id="tr">
+                <th>Name</th>
+                <th>Unit</th>
+                <th>Price Per Umit </th>
+                <th>total price</th>
+                <th>edit/delete</th>
+            </tr>
+        </table>
+    </div>
+    <div style="display: flex;flex-direction: row;">
+        <div>Grand total:</div>
+        <div id="total"></div>
+    </div>
+    <div id="edit"></div>
+    <script src="index.js"></script>
+</body>
+
+
+
+</html>
